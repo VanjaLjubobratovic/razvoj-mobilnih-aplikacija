@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chose Sensor:" />
+
+    <RadioGroup
+        android:id="@+id/sensorGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/accelerometerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer" />
+
+        <RadioButton
+            android:id="@+id/magnetometerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Magnetometer" />
+
+        <RadioButton
+            android:id="@+id/lightSensorBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light Sensor" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chose sampling rate:" />
+
+    <RadioGroup
+        android:id="@+id/delayGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/delNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delay NORMAL" />
+
+        <RadioButton
+            android:id="@+id/delUI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delay UI" />
+
+        <RadioButton
+            android:id="@+id/delGAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delay GAME" />
+
+        <RadioButton
+            android:id="@+id/delFASTEST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delay FASTEST" />
+
+        <RadioButton
+            android:id="@+id/delCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delay CUSTOM(us)" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/customDelayInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1000" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start reading" />
+
+    <TextView
+        android:id="@+id/resultsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="results" />
+
+</LinearLayout>
